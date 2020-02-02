@@ -16,17 +16,42 @@ $s-ipad: 768px;
 
 *,
 *::before,
-*::after{
-    box-sizing: inherit ;
+*::after {
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: $f-Raleway;
-    font-size: 18px;
+  margin: 0;
+  padding: 0;
+  font-family: $f-Raleway;
+  font-size: 18px;
+}
+
+.bg-div {
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  position: fixed;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: [full-start] 1fr [content-start] repeat(
+      2,
+      [col-start] minmax(min-content, 1fr) [col-end]
+    ) [content-end]1fr [full-end];
+  grid-template-rows: 90vh 50vh minmax(100vh, max-content) 50vh 30px;
+
+  @media only screen and (max-width: $s-iphone6) {
+    display: grid;
+    grid-template-rows: 6;
+  }
+}
+
+.section {
+  font-family: $f-BadScript;
 }

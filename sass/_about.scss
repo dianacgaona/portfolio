@@ -1,0 +1,39 @@
+.about{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .title {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    display: grid;
+    align-self: center;
+  }
+  
+  .headshot-div {
+    grid-column: 1 / 2;
+    grid-row: 2 / -1;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .headshot {
+    height: 400px;
+    width: auto;
+  }
+  
+  .about-div{
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+  }
+  
+  .about-p {
+    font-family: $f-Raleway;
+    font-weight: 100;
+    font-size: 14px;
+  }

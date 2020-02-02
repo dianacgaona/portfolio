@@ -1,0 +1,36 @@
+.welcome {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    @media only screen and (max-width: $s-iphone6) {
+      grid-row: 2 / 3;
+      height: 33vh;
+    }
+  }
+  
+  .welcome-img {
+      height: 600px;
+    @media only screen and (max-width: $s-iphone6) {
+      height: 33vh;
+    }
+  }
+  
+  .welcome h3 {
+    position: absolute;
+    top: 40%;
+    padding-left: 3%;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: 0.1em; /* Adjust as needed */
+    animation: typing 5.5s steps(100, end);
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 25%;
+    }
+  }
+  

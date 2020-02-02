@@ -1,0 +1,22 @@
+.projects{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-rows: 50px repeat(3, 1fr);
+}
+
+.title {
+    grid-row: 1 / 2;
+}
+
+.project1{
+    grid-row: 2 / 3;
+}
+
+.project2{
+    grid-row: 3 / 4;
+}
+
+.project3{
+    grid-row: 4 / 5;
+}

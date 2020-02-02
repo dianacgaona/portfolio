@@ -15,9 +15,160 @@ body {
   font-family: "Raleway";
   font-size: 18px; }
 
-  .bg-div {
-      height: 100vh;
-      overflow: hidden;
-      z-index: -1;
-      position: fixed;
-  }
+.bg-div {
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  position: fixed; }
+
+.container {
+  display: grid;
+  grid-template-columns: [full-start] 1fr [content-start] repeat(2, [col-start] minmax(min-content, 1fr) [col-end]) [content-end] 1fr [full-end];
+  grid-template-rows: 90vh 50vh minmax(100vh, max-content) 50vh 30px; }
+  @media only screen and (max-width: 375px) {
+    .container {
+      display: grid;
+      grid-template-rows: 6; } }
+
+.section {
+  font-family: "Bad Script"; }
+
+.header {
+  grid-column: 2 / 3;
+  grid-row: 1 / 5;
+  background: #483d8bab;
+  height: 100vh;
+  width: 100px;
+  position: sticky;
+  top: 0; }
+  @media only screen and (max-width: 375px) {
+    .header {
+      grid-row: 1 / 2; } }
+
+.initials {
+  font-family: "Bad Script", cursive;
+  font-size: 24px; }
+
+.welcome {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2; }
+  @media only screen and (max-width: 375px) {
+    .welcome {
+      grid-row: 2 / 3;
+      height: 33vh; } }
+
+.welcome-img {
+  height: 600px; }
+  @media only screen and (max-width: 375px) {
+    .welcome-img {
+      height: 33vh; } }
+
+.welcome h3 {
+  position: absolute;
+  top: 40%;
+  padding-left: 3%;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  letter-spacing: 0.1em;
+  /* Adjust as needed */
+  animation: typing 5.5s steps(100, end); }
+
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 25%; } }
+
+.about {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: 1fr 1fr; }
+
+.title {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  display: grid;
+  align-self: center; }
+
+.headshot-div {
+  grid-column: 1 / 2;
+  grid-row: 2 / -1;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.headshot {
+  height: 400px;
+  width: auto; }
+
+.about-div {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1; }
+
+.about-p {
+  font-family: "Raleway";
+  font-weight: 100;
+  font-size: 14px; }
+
+.projects {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  display: grid;
+  grid-template-rows: 50px repeat(3, 1fr); }
+
+.title {
+  grid-row: 1 / 2; }
+
+.project1 {
+  grid-row: 2 / 3; }
+
+.project2 {
+  grid-row: 3 / 4; }
+
+.project3 {
+  grid-row: 4 / 5; }
+
+.contact {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: 1fr 1fr; }
+  @media only screen and (max-width: 375px) {
+    .contact {
+      grid-template-rows: repeat(4, 1fr); } }
+
+.title {
+  grid-row: 1 / 2;
+  grid-column: 1 / -1; }
+
+.email-div {
+  grid-row: 2 / -1;
+  grid-column: 1 / 2; }
+
+.social-div {
+  grid-row: 2 / -1;
+  grid-column: 2/ -1;
+  display: subgrid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center; }
+
+.social-media-icon {
+  display: grid;
+  align-items: center; }
+
+.footer {
+  grid-column: 3 / 4;
+  grid-row: 5 / -1;
+  background: #b78162bf;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: "Raleway"; }
