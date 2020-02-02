@@ -1,6 +1,7 @@
 #Portfolio
 
 ## Using
+
 - [BEM](http://getbem.com/)
 - [SASS](https://sass-lang.com/)
 - [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
@@ -29,6 +30,7 @@ After cloning/forking the repository, navigate to the project in your terminal.
 ## Resources
 
 ### Mockups
+
 [Wireframe|cc](https://wireframe.cc/)
 
 [Canva](https://www.canva.com/)
@@ -40,10 +42,12 @@ Pen & Paper
 [Top font combinations](https://blog.marvelapp.com/top-font-combinations/)
 
 [Google Fonts](https://fonts.google.com/)
-  - Lato
-  - Roboto
-  - Open Sans
-  - Merriweather
+
+- Lato
+- Roboto
+- Open Sans
+- Bad Script
+- Merriweather
 
 ### Choosing Colors
 
@@ -59,6 +63,6 @@ Pen & Paper
 
 [Squarespace examples](https://www.squarespace.com/templates/personal-CV)
 
-[humans.fyi](https://humans.fyi/) 
+[humans.fyi](https://humans.fyi/)
 
 [thalida](https://thalida.me/)
