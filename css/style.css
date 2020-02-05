@@ -145,6 +145,10 @@ body {
     .contact {
       grid-template-rows: repeat(4, 1fr); } }
 
+#fs-frm {
+  display: flex;
+  flex-direction: column; }
+
 .title {
   grid-row: 1 / 2;
   grid-column: 1 / -1; }
@@ -156,14 +160,17 @@ body {
 .social-div {
   grid-row: 2 / -1;
   grid-column: 2/ -1;
-  display: subgrid;
-  grid-template-rows: 1fr;
+  display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
 
-.social-media-icon {
-  display: grid;
-  align-items: center; }
+.media {
+  display: flex;
+  margin: 0 5px; }
+
+.media a {
+  text-decoration: none; }
 
 .footer {
   grid-column: 3 / 4;
