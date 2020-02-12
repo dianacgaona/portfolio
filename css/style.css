@@ -23,8 +23,9 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: [full-start] 1fr [content-start] repeat(2, [col-start] minmax(min-content, 1fr) [col-end]) [content-end] 1fr [full-end];
-  grid-template-rows: 90vh 50vh minmax(100vh, max-content) 50vh 30px; }
+  column-gap: 10px;
+  grid-template-columns: [full-start] 1fr [content-start] 100px 6fr [content-end] 1fr [full-end];
+  grid-template-rows: 100vh repeat(3, minmax(50vh, max-content)) 30px; }
   @media only screen and (max-width: 375px) {
     .container {
       display: grid;
@@ -38,34 +39,52 @@ body {
   grid-row: 1 / 5;
   background: #483d8bab;
   height: 100vh;
-  width: 100px;
   position: sticky;
-  top: 0; }
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
   @media only screen and (max-width: 375px) {
     .header {
       grid-row: 1 / 2; } }
 
 .initials {
   font-family: "Bad Script", cursive;
-  font-size: 24px; }
+  font-size: 35px;
+  font-weight: 800;
+  position: absolute;
+  top: 0;
+  left: 25px; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+  a :hover {
+    color: #fff8f1; }
+
+.projects-header {
+  margin: 40px 0; }
 
 .welcome {
   grid-column: 3 / 4;
-  grid-row: 1 / 2; }
+  grid-row: 1 / 2;
+  background-image: url("/images/emile-perron-unsplash.jpg");
+  background-position: center;
+  background-size: 100%;
+  width: auto;
+  background-repeat: no-repeat;
+  position: relative; }
   @media only screen and (max-width: 375px) {
     .welcome {
       grid-row: 2 / 3;
       height: 33vh; } }
 
-.welcome-img {
-  height: 600px; }
-  @media only screen and (max-width: 375px) {
-    .welcome-img {
-      height: 33vh; } }
-
 .welcome h3 {
   position: absolute;
-  top: 40%;
+  font-size: 1.6em;
+  text-shadow: 2px 2px #7a7a7ad7;
+  top: 50%;
   padding-left: 3%;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
@@ -75,13 +94,13 @@ body {
   /* Keeps the content on a single line */
   letter-spacing: 0.1em;
   /* Adjust as needed */
-  animation: typing 5.5s steps(100, end); }
+  animation: typing 2s steps(100, end); }
 
 @keyframes typing {
   from {
     width: 0; }
   to {
-    width: 25%; } }
+    width: 55%; } }
 
 .about {
   grid-column: 3 / 4;

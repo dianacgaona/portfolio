@@ -4,9 +4,9 @@ $f-BadScript: "Bad Script";
 $f-CedarvilleCursive: "Cedarville Cursive";
 
 /*colors*/
-$c-one: #fff8f1;
+$c-offwhite: #fff8f1;
+$c-purple: #483d8bab;
 $c-two: #b78162bf;
-$c-three: #483d8bab;
 $c-four: #ba9385b8;
 $c-five: burlywood;
 
@@ -40,11 +40,9 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: [full-start] 1fr [content-start] repeat(
-      2,
-      [col-start] minmax(min-content, 1fr) [col-end]
-    ) [content-end]1fr [full-end];
-  grid-template-rows: 90vh 50vh minmax(100vh, max-content) 50vh 30px;
+  column-gap: 10px;
+  grid-template-columns: [full-start] 1fr [content-start]100px 6fr [content-end]1fr [full-end];
+  grid-template-rows: 100vh repeat(3, minmax(50vh, max-content)) 30px;
 
   @media only screen and (max-width: $s-iphone6) {
     display: grid;
