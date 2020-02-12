@@ -41,8 +41,8 @@ body {
 .container {
   display: grid;
   column-gap: 10px;
-  grid-template-columns: [full-start] 1fr [content-start]100px 6fr [content-end]1fr [full-end];
-  grid-template-rows: 100vh repeat(3, minmax(50vh, max-content)) 30px;
+  grid-template-columns: [full-start] 0.5fr [content-start]minmax(70px, 100px) 6fr [content-end]0.5fr [full-end];
+  grid-template-rows: 90vh repeat(3, minmax(50vh, max-content)) 30px;
 
   @media only screen and (max-width: $s-iphone6) {
     display: grid;

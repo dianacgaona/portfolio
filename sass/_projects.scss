@@ -3,10 +3,20 @@
     grid-row: 3 / 4;
     display: grid;
     grid-template-rows: 50px repeat(3, 1fr);
+    align-content: center;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 10px;
+    background: $c-four;
+    border-radius: 10px;
 }
 
 .title {
     grid-row: 1 / 2;
+    display: grid;
+    justify-self: center;
+    left: 50%;
+    font-size: 2em;
 }
 
 .project1{

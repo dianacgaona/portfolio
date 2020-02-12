@@ -24,8 +24,8 @@ body {
 .container {
   display: grid;
   column-gap: 10px;
-  grid-template-columns: [full-start] 1fr [content-start] 100px 6fr [content-end] 1fr [full-end];
-  grid-template-rows: 100vh repeat(3, minmax(50vh, max-content)) 30px; }
+  grid-template-columns: [full-start] 0.5fr [content-start] minmax(70px, 100px) 6fr [content-end] 0.5fr [full-end];
+  grid-template-rows: 90vh repeat(3, minmax(50vh, max-content)) 30px; }
   @media only screen and (max-width: 375px) {
     .container {
       display: grid;
@@ -65,6 +65,15 @@ a {
 
 .projects-header {
   margin: 40px 0; }
+
+.about-header:hover {
+  transform: scale(1.1); }
+
+.projects-header:hover {
+  transform: scale(1.1); }
+
+.contact-header:hover {
+  transform: scale(1.1); }
 
 .welcome {
   grid-column: 3 / 4;
@@ -107,7 +116,11 @@ a {
   grid-row: 2 / 3;
   display: grid;
   grid-template-rows: 50px 1fr;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  background: #b78162bf;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px; }
 
 .title {
   grid-column: 1 / -1;
@@ -118,6 +131,8 @@ a {
 .headshot-div {
   grid-column: 1 / 2;
   grid-row: 2 / -1;
+  display: grid;
+  align-self: center;
   height: 300px;
   width: 300px;
   border-radius: 50%;
@@ -140,10 +155,20 @@ a {
   grid-column: 3 / 4;
   grid-row: 3 / 4;
   display: grid;
-  grid-template-rows: 50px repeat(3, 1fr); }
+  grid-template-rows: 50px repeat(3, 1fr);
+  align-content: center;
+  justify-content: center;
+  margin: 10px 0;
+  padding: 10px;
+  background: #ba9385b8;
+  border-radius: 10px; }
 
 .title {
-  grid-row: 1 / 2; }
+  grid-row: 1 / 2;
+  display: grid;
+  justify-self: center;
+  left: 50%;
+  font-size: 2em; }
 
 .project1 {
   grid-row: 2 / 3; }
@@ -159,7 +184,11 @@ a {
   grid-row: 4 / 5;
   display: grid;
   grid-template-rows: 50px 1fr;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  background: #b78162bf;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px; }
   @media only screen and (max-width: 375px) {
     .contact {
       grid-template-rows: repeat(4, 1fr); } }
@@ -194,7 +223,12 @@ a {
 .footer {
   grid-column: 3 / 4;
   grid-row: 5 / -1;
-  background: #b78162bf;
+  background: #ba9385b8;
   font-size: 16px;
   font-weight: 100;
-  font-family: "Raleway"; }
+  font-family: "Raleway";
+  display: grid;
+  align-content: center;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 10px 10px 0 0; }
