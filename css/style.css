@@ -116,19 +116,23 @@ a {
   grid-row: 2 / 3;
   display: grid;
   grid-template-rows: 50px 1fr;
-  grid-template-columns: 1fr 1fr;
-  background: #b78162bf;
+  grid-template-columns: minmax(310px, 0.5fr) 1fr;
+  background: #b37856bf;
   margin: 5px 0;
   padding: 10px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  justify-content: center;
+  align-content: center; }
 
 .title {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   display: grid;
-  align-self: center; }
+  align-self: center;
+  justify-self: center; }
 
 .headshot-div {
+  margin-left: 10px;
   grid-column: 1 / 2;
   grid-row: 2 / -1;
   display: grid;
@@ -144,7 +148,10 @@ a {
 
 .about-div {
   grid-column: 2 / -1;
-  grid-row: 2 / -1; }
+  grid-row: 2 / -1;
+  display: grid;
+  align-self: center;
+  margin: 0 10px; }
 
 .about-p {
   font-family: "Raleway";
@@ -160,7 +167,7 @@ a {
   justify-content: center;
   margin: 10px 0;
   padding: 10px;
-  background: #ba9385b8;
+  background: #c59a93da;
   border-radius: 10px; }
 
 .title {
@@ -185,13 +192,18 @@ a {
   display: grid;
   grid-template-rows: 50px 1fr;
   grid-template-columns: 1fr 1fr;
-  background: #b78162bf;
+  background: #b37856bf;
   margin: 5px 0;
   padding: 10px;
   border-radius: 10px; }
   @media only screen and (max-width: 375px) {
     .contact {
       grid-template-rows: repeat(4, 1fr); } }
+
+#fs-frm-inputs {
+  background-color: rgba(255, 255, 255, 0.534);
+  border: none;
+  border-radius: 10px; }
 
 #fs-frm {
   display: flex;
@@ -223,7 +235,7 @@ a {
 .footer {
   grid-column: 3 / 4;
   grid-row: 5 / -1;
-  background: #ba9385b8;
+  background: #c59a93da;
   font-size: 16px;
   font-weight: 100;
   font-family: "Raleway";

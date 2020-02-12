@@ -3,11 +3,13 @@
     grid-row: 2 / 3;
     display: grid;
     grid-template-rows: 50px 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(310px, .5fr) 1fr;
     background: $c-two;
     margin: 5px 0;
     padding: 10px;
     border-radius: 10px;
+    justify-content: center;
+    align-content: center;
   }
   
   .title {
@@ -15,9 +17,11 @@
     grid-row: 1 / 2;
     display: grid;
     align-self: center;
+    justify-self: center;
   }
-  
+
   .headshot-div {
+    margin-left: 10px;
     grid-column: 1 / 2;
     grid-row: 2 / -1;
     display: grid;
@@ -36,6 +40,9 @@
   .about-div{
     grid-column: 2 / -1;
     grid-row: 2 / -1;
+    display: grid;
+    align-self: center;
+    margin: 0 10px;
   }
   
   .about-p {
