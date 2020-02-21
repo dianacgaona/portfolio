@@ -9,7 +9,8 @@
     position: relative;
     @media only screen and (max-width: $s-iphone6) {
       grid-row: 2 / 3;
-      height: 33vh;
+      grid-column: 1 / 2;
+      // height: 33vh;
     }
   }
   

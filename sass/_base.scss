@@ -41,13 +41,13 @@ body {
 
 .container {
   display: grid;
-  column-gap: 10px;
+  // column-gap: 10px;
   grid-template-columns: [full-start] 0.5fr [content-start]minmax(70px, 100px) 6fr [content-end]0.5fr [full-end];
   grid-template-rows: 90vh repeat(3, minmax(50vh, max-content)) 30px;
 
   @media only screen and (max-width: $s-iphone6) {
-    display: grid;
-    grid-template-rows: 6;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, minmax(50vh, max-content));
   }
 }
 

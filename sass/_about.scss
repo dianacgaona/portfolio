@@ -10,6 +10,11 @@
     border-radius: 10px;
     justify-content: center;
     align-content: center;
+
+    @media only screen and (max-width: $s-iphone6){
+      grid-row: 3 / 4 ;
+      grid-column: 1 / 2;
+    }
   }
   
   .title {
