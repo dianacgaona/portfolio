@@ -47,7 +47,7 @@ body {
 
   @media only screen and (max-width: $s-iphone6) {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, minmax(50vh, max-content));
+    grid-template-rows: repeat(7, minmax(20vh, max-content));
   }
 }
 
