@@ -41,7 +41,7 @@ body {
 
 .container {
   display: grid;
-  // column-gap: 10px;
+  column-gap: 10px;
   grid-template-columns: [full-start] 0.5fr [content-start]minmax(70px, 100px) 6fr [content-end]0.5fr [full-end];
   grid-template-rows: 90vh repeat(3, minmax(50vh, max-content)) 30px;
 
@@ -53,4 +53,5 @@ body {
 
 .section {
   font-family: $f-BadScript;
+  width: 100vw;
 }
